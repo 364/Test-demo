@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## 测试上传文件
 
-You can use the [editor on GitHub](https://github.com/364/Test-demo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+ [编辑修改](https://github.com/364/Test-demo/edit/master/README.md) 
+ 
+ 查看[demo1]()
+ 查看[demo2]()
+ 查看[demo2]()
+ 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 记录上传过程
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+看了网上好多大神介绍怎么上传，作为一个小白只能默默的跟着步骤然后记录下来
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+1、在github上new repository，然后复制地址
 
-- Bulleted
-- List
+2、进入要上传的项目文件
 
-1. Numbered
-2. List
+2、打开Git Bash，没有点击[下载](http://gitforwindows.org/)
 
-**Bold** and _Italic_ and `Code` text
+4、配置
+# 先配置身份
+git config --global user.name "名字"
+git config --global user.email "邮箱"
 
-[Link](url) and ![Image](src)
+git clone 项目地址
+git add . 
+git commit -m "项目信息"
+git push -u origin master
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/364/Test-demo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 更多Git常用命令
+![Git命令]()
