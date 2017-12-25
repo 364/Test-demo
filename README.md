@@ -26,9 +26,13 @@ git config --global user.name "名字"
 git config --global user.email "邮箱"
 
 git clone 项目地址
+### 把所有文件放入clone的文件夹下
+cd  dir
 git add . 
 git commit -m "项目信息"
-git push -u origin master
+git push -u origin master 
+### 登录github
+
 ```
 ### 更多Git常用命令
 ![Git命令]()
