@@ -20,7 +20,8 @@
 2、打开Git Bash，没有点击[下载](http://gitforwindows.org/)
 
 4、配置
-# 先配置身份
+
+### 第一次使用先配置身份
 git config --global user.name "名字"
 git config --global user.email "邮箱"
 
