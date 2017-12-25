@@ -15,9 +15,9 @@
 
 1、在GitHub上New repository，然后复制地址
 
-2、进入要上传的项目文件
+2、本地进入要上传的项目文件夹
 
-2、打开Git Bash，没有就百度下载Git
+2、右键打开Git Bash，没有就百度下载Git
 
 4、配置
 
@@ -27,7 +27,7 @@ git config --global user.email "邮箱"
 
 git clone 项目地址
 ### 把所有文件放入clone的文件夹下
-cd  dir
+cd  文件名
 git add . 
 git commit -m "项目信息"
 git push -u origin master 
