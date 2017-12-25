@@ -1,6 +1,6 @@
 ## 测试上传文件
 
- [编辑修改说明文档](https://github.com/364/Test-demo/edit/master/README.md) 
+ [编辑说明文档](https://github.com/364/Test-demo/edit/master/README.md) 
  
  查看[demo1]()  
  查看[demo2]()  
@@ -13,11 +13,11 @@
 
 ```markdown
 
-1、在**GitHub**上**New repository**，然后复制地址
+1、在GitHub上New repository，然后复制地址
 
 2、本地进入要上传的项目文件夹
 
-2、右键打开**Git Bash**，没有就百度下载Git
+2、右键打开Git Bash，没有就百度下载Git
 
 4、配置
 
