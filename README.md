@@ -25,7 +25,7 @@
 git config --global user.name "名字"
 git config --global user.email "邮箱"
 
-git clone 项目地址
+git clone 复制的项目地址
 ### 把所有文件放入clone的文件夹下
 cd  文件名
 git add . 
