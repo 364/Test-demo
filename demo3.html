@@ -1,0 +1,191 @@
+    <html>
+        <head>
+            <title>
+                Responsive Design Example
+            </title>
+            <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" ></script>
+
+    	<style>
+            body{margin:0;font-family: "microsoft yahei",arial;background:url(img/1.png);font-size: 100%}
+            li{list-style:none;}
+            a{text-decoration: none;}
+            nav{background:#333;}
+            nav ul{width:70%;margin:0 auto;padding:0}
+            nav li{display:inline-block;padding-right:10px;}
+            nav li a{text-decoration:none;color:white;font-size:1.5em;line-height:2.5em}
+            nav li a:hover{color:#ddd;}
+            #menuicon {display: none;}
+            #menuicon span{float: right;}
+            #menuicon img{width:26px;}
+            .clear{clear: both;}
+            aside {width: 15%;float: left;padding-top: 25px;line-height: 30px;}
+            .post {width: 70%;margin: 0 auto;float: left;}
+            .item { width: 32%;height: 150px;background-color: #DDD;display: inline-block;}
+            footer {width: 100%;text-align: center;clear: both;border-top:1px solid #ccc;}
+            footer li {display: inline-block;padding-bottom: 10px;}
+            article p{text-align:justify;}
+            article h1{font-size:2em;}
+            .illustration{max-width: 100%}
+
+            @media only screen and (max-width : 680px) {
+                nav ul{width:94%;}
+                aside {display: none;}
+                .post { width: 96%;float: none;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                }
+                .grid {width: 96%;}
+                .grid .item {width: 100%;display: block;margin-bottom:10px;}
+            }
+
+            @media screen and (max-width: 500px){
+                nav ul{display: none;}
+                #menuicon{display: block;padding:10px;align: right;}
+                nav ul li{width: 100%;font-size: 0.8em;padding-left: 20px;}
+                nav li:hover{background:#ddd;}
+                nav li a:hover{color:#c33a32;}
+                nav ul{width:100%;border-top: 1px solid white;}
+            }
+    	</style>
+
+
+        <script type="text/javascript">
+/*            window.onload=function(){
+                var menu=document.getElementById("menuicon");
+                var oUl=document.getElementById("oUl");
+                menu.onclick=function(){
+                    oUl.style.display=oUl.style.display=="none"||oUl.style.display==""?"block":"none";
+                }
+                if(document.body.clientWidth >"500px"){oUl.style.display=="block"}
+            }*/
+
+            $(function(){
+                $("#menuicon,nav ul li").click(function(){
+                    if ($("#menuicon").is(":visible")) {
+                    $("nav ul").toggle(300);
+                    };
+                });
+                $( window ).resize(function() {
+                    if (!$("nav ul").is(":visible")) {
+                        $('nav ul').attr('style', function(i, style)
+                            {
+                                return style.replace(/display[^;]+;?/g, '');
+                            });
+                    };
+                });
+            })
+        </script>
+
+        </head>
+        <body>
+            <div id="main">
+                <nav>
+                    <a href="#" id="menuicon">
+                        <span><img src="img/2.png" id="munu-img" /></span>
+                        <div class="clear"></div>
+                    </a>
+                    <ul id="oUl">
+                        <li>
+                            <a href="#subtitle1">Home</a>
+                        </li>
+                        <li>
+                            <a href="#subtitle2">Articles</a>
+                        </li>
+                        <li>
+                            <a href="#subtitle3">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Forum</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+                <aside>
+                    <ul>
+                        <li><a href="#subtitle1">item1</a> </li>
+                        <li><a href="#subtitle2">item2</a></li>
+                        <li><a href="#subtitle3">item3</a></li>
+                        <li><a href="#subtitle4">item4</a></li>
+                        <li><a href="#subtitle5">item5</a></li>
+                    </ul>
+                </aside>
+                <section class="post">
+                    <article>
+                        <h1>
+                            Sample Title
+                        </h1>
+                        <h4 id="subtitle1">subtitle1</h4>
+                        <p>
+                            Video provides a powerful way to help you prove your point. When you click Online
+                            Video, you can paste in the embed code for the video you want to add. You can also
+                            type a keyword to search online for the video that best fits your document. To make
+                            your document look professionally produced, Word provides header, footer, cover page,
+                            and text box designs that complement each other. For example, you can add a matching
+                            cover page, header, and sidebar. Click Insert and then choose the elements you want
+                            from the different galleries. Themes and styles also help keep your document coordinated.
+                            When you click Design and choose a new Theme, the pictures, charts, and SmartArt
+                            graphics change to match your new theme. When you apply styles, your headings change
+                            to match the new theme. Save time in Word with new buttons that show up where you
+                            need them.
+                        </p>
+                        <section class="grid">
+                            <div class="item">
+                                #1
+                            </div>
+                            <div class="item">
+                                #2
+                            </div>
+                            <div class="item">
+                                #3
+                            </div>
+                        </section>
+                        <h4 id="subtitle2">subtitle2</h4>
+                        <p>
+                            To change the way a picture fits in your document, click it and a button for layout
+                            options appears next to it. When you work on a table, click where you want to add
+                            a row or a column, and then click the plus sign. Reading is easier, too, in the new
+                            Reading view. You can collapse parts of the document and focus on the text you want.
+                            If you need to stop reading before you reach the end, Word remembers where you left
+                            off - even on another device. Video provides a powerful way to help you prove your
+                            point. When you click Online Video, you can paste in the embed code for the video
+                            you want to add. You can also type a keyword to search online for the video that
+                            best fits your document. To make your document look professionally produced, Word
+                            provides header, footer, cover page, and text box designs that complement each other.
+                            For example, you can add a matching cover page, header, and sidebar.
+                        </p>
+                        <img class="illustration" src="img/1.jpg" title="sample pic" alt="beauty" />
+                        <h4 id="subtitle3">subtitle3</h4>
+                        <p>
+                            Click Insert and then choose the elements you want from the different galleries.
+                            Themes and styles also help keep your document coordinated. When you click Design
+                            and choose a new Theme, the pictures, charts, and SmartArt graphics change to match
+                            your new theme. When you apply styles, your headings change to match the new theme.
+                            Save time in Word with new buttons that show up where you need them. To change the
+                            way a picture fits in your document, click it and a button for layout options appears
+                            next to it. When you work on a table, click where you want to add a row or a column,
+                            and then click the plus sign. Reading is easier, too, in the new Reading view. You
+                            can collapse parts of the document and focus on the text you want. If you need to
+                            stop reading before you reach the end, Word remembers where you left off - even on
+                            another device.
+                        </p>
+                    </article>
+                </section>
+                <footer>
+                    <ul>
+                        <li><small>Wayou &copy 2013|</small></li>
+                        <li><small><a href="mailto:sample@somesite.com">Contact</a></small> </li>
+                    </ul>
+                </footer>
+            </div>
+        </body>
+    </html>
+
+
+
