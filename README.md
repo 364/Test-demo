@@ -13,11 +13,11 @@
 
 ```markdown
 
-1、在github上new repository，然后复制地址
+1、在GitHub上New repository，然后复制地址
 
 2、进入要上传的项目文件
 
-2、打开Git Bash，没有点击[下载](http://gitforwindows.org/)
+2、打开Git Bash，没有就百度下载Git
 
 4、配置
 
@@ -31,7 +31,7 @@ cd  dir
 git add . 
 git commit -m "项目信息"
 git push -u origin master 
-### 登录github
+### 登录GitHub
 
 ```
 ### 更多Git常用命令
