@@ -35,4 +35,4 @@ git push -u origin master
 
 ```
 ### 更多Git常用命令
-![Git命令]()
+![Git命令](https://364.github.io/Test-demo/img/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.jpg)
