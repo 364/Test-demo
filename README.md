@@ -2,9 +2,8 @@
 
  [编辑说明文档](https://github.com/364/Test-demo/edit/master/README.md) 
  
- 查看[demo1](https://github.com/364/Test-demo/demo1.html)  
- 查看[demo2](https://github.com/364/Test-demo/demo2.html)  
- 查看[demo3](https://github.com/364/Test-demo/demo3.html)  
+ 查看[demo1](https://364.github.io/Test-demo/Test-demo/demo1.html)  
+ 查看[demo3](https://364.github.io/Test-demo/Test-demo/demo3.html)  
  
 
 ### 记录上传过程
