@@ -33,6 +33,8 @@ git commit -m "项目信息"
 git push -u origin master 
 ### 后面需要输入GitHub账号密码
 
+### 如在GitHub上修改过，在本地上传前需要git pull
+
 ```
 ### 更多Git常用命令
 ![Git命令](https://364.github.io/Test-demo/img/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.jpg)
